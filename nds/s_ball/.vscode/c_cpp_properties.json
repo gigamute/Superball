@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/devkitpro/libnds/include",
-                "/home/gbaman/projects/superball/nds/s_ball/nflib/include"
+                "/home/${USER}/projects/superball/nds/s_ball/nflib/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
