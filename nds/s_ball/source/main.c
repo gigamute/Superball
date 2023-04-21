@@ -77,8 +77,17 @@ typedef enum {
 	BACKGROUNDS_NOT_CREATED
 } ElementCheck;
 
+typedef enum {
+	STANDARD,
+	BOMBERMODE,
+	BABYSITTER
+} GameMode;
+
+int w = 24;
+int h = 24;
 bool BIG_BOX_CREATED = false;
 Destructable boxArray[OBJECT_SIZE];
+int DELETED_OBJECTS = 0;
 
 // Load sprites from the Nitro File System
 void loadAssets() {
@@ -274,6 +283,7 @@ void handleBallCollision(BallObject* b, Paddle* l, Paddle* r, Paddle* u, Paddle*
 				b->ySpeed_val = -b->ySpeed_val;
 				mmEffectEx(&sound);
 				NF_DeleteSprite(1,boxArray[i].spriteID);
+				DELETED_OBJECTS--;
 				for (int j = i; j < OBJECT_SIZE - 1; j++)
 					memcpy(&boxArray[j],&boxArray[j+1],sizeof(boxArray[j+1]));
 
@@ -504,7 +514,7 @@ void movesSelectPaddles(Paddle* l_p, Paddle* r_p, Paddle* u_p, Paddle* d_p, Back
 }
 
 // Create matrix of boxes
-void createDestructibles(int spID, int w, int h, int x, int y, int xamt) {
+void createDestructibles(int spID, int x, int y, int xamt) {
 	if (!BIG_BOX_CREATED) {
 		for (int i = x; i < (x + w); i+=8) {
 			for (int j = y; j < (y + h); j+=8) {
@@ -522,9 +532,21 @@ void createDestructibles(int spID, int w, int h, int x, int y, int xamt) {
 				// Increment sprite ID, and xamt
 				spID++;
 				xamt++;
+				DELETED_OBJECTS++;
 			}
 		}
 		BIG_BOX_CREATED = true;
+
+	}
+
+	if (BIG_BOX_CREATED) {
+		if (DELETED_OBJECTS == 0) {
+			if ((w < 64) && (h < 64)) {
+				w+=8;
+				h+=8;
+			}
+			BIG_BOX_CREATED = false;
+		}
 	}
 
 }
@@ -533,9 +555,7 @@ int main() {
 	BackEnd right;
 	BackEnd up;
 	BackEnd down;
-
-	int w = 64;
-	int h = 64;
+	GameMode mode = STANDARD;
 	int boxX = SCREEN_WIDTH/2 - w/2;
 	int boxY = SCREEN_HEIGHT/2 - h/2;
 	// Set 2D engine on the top screen with mode 0 (Tiled BG)
@@ -610,7 +630,7 @@ int main() {
 		drawPaddles(&left_paddle,&right_paddle,&up_paddle,&down_paddle);
 		// Handle paddle movement
 		movesSelectPaddles(&left_paddle,&right_paddle,&up_paddle,&down_paddle,&left,&right,&up,&down,stylus);
-		createDestructibles(freeSpriteID,w,h,boxX,boxY,boxXAmount);
+		createDestructibles(freeSpriteID,boxX,boxY,boxXAmount);
 		handleBallCollision(&ball,&left_paddle,&right_paddle,&up_paddle,&down_paddle,ball_speed,collide_sound);
 
 		if (check != BACKGROUNDS_CREATED) {

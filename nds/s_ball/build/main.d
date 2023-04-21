@@ -1,4 +1,4 @@
-main.o: /home/jollyrancher/projects/Superball/nds/s_ball/source/main.c \
+main.o: /home/gbaman/projects/Superball/nds/s_ball/source/main.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
@@ -61,24 +61,24 @@ main.o: /home/jollyrancher/projects/Superball/nds/s_ball/source/main.c \
  /opt/devkitpro/libnds/include/nds/arm9/nand.h \
  /opt/devkitpro/libnds/include/maxmod9.h \
  /opt/devkitpro/libnds/include/mm_types.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_lib.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_defines.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_basic.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_2d.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_tiledbg.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_affinebg.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_bitmapbg.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_mixedbg.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sprite256.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_text.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_text16.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_colision.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sound.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_media.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_3d.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sprite3d.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/build/soundbank.h \
- /home/jollyrancher/projects/Superball/nds/s_ball/build/soundbank_bin.h
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_lib.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_defines.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_basic.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_2d.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_tiledbg.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_affinebg.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_bitmapbg.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_mixedbg.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sprite256.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_text.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_text16.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_colision.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sound.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_media.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_3d.h \
+ /home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sprite3d.h \
+ /home/gbaman/projects/Superball/nds/s_ball/build/soundbank.h \
+ /home/gbaman/projects/Superball/nds/s_ball/build/soundbank_bin.h
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
 /opt/devkitpro/libnds/include/nds/ndstypes.h:
@@ -141,21 +141,21 @@ main.o: /home/jollyrancher/projects/Superball/nds/s_ball/source/main.c \
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
 /opt/devkitpro/libnds/include/maxmod9.h:
 /opt/devkitpro/libnds/include/mm_types.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_lib.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_defines.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_basic.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_2d.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_tiledbg.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_affinebg.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_bitmapbg.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_mixedbg.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sprite256.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_text.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_text16.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_colision.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sound.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_media.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_3d.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/nflib/include/nf_sprite3d.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/build/soundbank.h:
-/home/jollyrancher/projects/Superball/nds/s_ball/build/soundbank_bin.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_lib.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_defines.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_basic.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_2d.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_tiledbg.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_affinebg.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_bitmapbg.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_mixedbg.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sprite256.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_text.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_text16.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_colision.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sound.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_media.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_3d.h:
+/home/gbaman/projects/Superball/nds/s_ball/nflib/include/nf_sprite3d.h:
+/home/gbaman/projects/Superball/nds/s_ball/build/soundbank.h:
+/home/gbaman/projects/Superball/nds/s_ball/build/soundbank_bin.h:
